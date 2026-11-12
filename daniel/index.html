@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daniel Franco | Sêmen MF do Brasil</title>
+<meta name="description" content="Cartão de visita digital de Daniel Franco, Sêmen MF do Brasil.">
+<meta name="theme-color" content="#0d2a1c">
+<link rel="canonical" href="https://mfdobrasil.com/daniel/">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Sêmen MF do Brasil">
+<meta property="og:title" content="Daniel Franco | Sêmen MF do Brasil">
+<meta property="og:description" content="Cartão de visita digital: WhatsApp, e-mail e contato para salvar na agenda.">
+<meta property="og:url" content="https://mfdobrasil.com/daniel/">
+<meta property="og:image" content="https://mfdobrasil.com/img/poster.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<link rel="icon" href="/img/logo-180.png">
+<link rel="apple-touch-icon" href="/img/logo-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Besley:wght@500;600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0d2a1c; --green-2:#17402c; --bone:#f1ecdf; --brass:#c8a55c;
+  --page:#e3dfd2; --panel:#f8f5ee; --ink:#14241b; --muted:#5a685e; --rule:#dcd6c6;
+  --display:"Besley", Georgia, "Times New Roman", serif;
+  --body:"Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --page:#06120c; --panel:#0f2318; --ink:#ece7d9; --muted:#9dad9f; --rule:#234232;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --page:#06120c; --panel:#0f2318; --ink:#ece7d9; --muted:#9dad9f; --rule:#234232;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html,body{height:100%}
+body{
+  margin:0; background:var(--page); color:var(--ink);
+  font-family:var(--body); font-size:16px; line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{min-height:100%; display:flex; justify-content:center; align-items:flex-start}
+.card{width:100%; max-width:440px; background:var(--panel); overflow:hidden}
+@media (min-width:520px){
+  .wrap{padding:40px 20px}
+  .card{border-radius:18px; box-shadow:0 24px 60px -30px rgba(13,42,28,.55)}
+}
+
+/* identidade */
+.top{
+  color:var(--bone); padding:22px 26px 30px; position:relative;
+  background:
+    linear-gradient(180deg, rgba(13,42,28,.25) 0, rgba(13,42,28,.55) 120px, var(--green) 230px),
+    url(/img/poster.jpg) center top / 100% auto no-repeat,
+    var(--green);
+}
+.top::after{ /* filete de latão */
+  content:""; position:absolute; left:26px; right:26px; bottom:0; height:2px; background:var(--brass);
+}
+.bar{display:flex; align-items:center; justify-content:space-between; gap:12px}
+.brand{display:flex; align-items:center; gap:12px; font-weight:500; font-size:15px; letter-spacing:.01em}
+.seal{
+  width:46px; height:46px; flex:none; border-radius:50%;
+  border:1.5px solid var(--brass); color:var(--brass);
+  display:grid; place-items:center;
+  font-family:var(--display); font-weight:600; font-size:17px; letter-spacing:.02em;
+}
+.logo{width:64px; height:64px; flex:none; display:block; filter:drop-shadow(0 4px 10px rgba(0,0,0,.35))}
+.brand span{text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.langs{background:rgba(13,42,28,.55); border-radius:8px; padding:2px}
+.share{
+  display:inline-flex; align-items:center; gap:8px; margin:18px auto 0; justify-self:center;
+  font:inherit; font-size:14.5px; font-weight:500; color:var(--bone); opacity:.85;
+  background:none; border:0; padding:6px 8px; cursor:pointer; text-decoration:underline; text-underline-offset:4px;
+}
+.share:hover{opacity:1}
+.langs{display:flex; gap:2px}
+.langs button{
+  font:inherit; font-size:13px; font-weight:500; color:var(--bone); opacity:.6;
+  background:none; border:0; padding:6px 7px; border-radius:6px; cursor:pointer;
+}
+.langs button[aria-pressed="true"]{opacity:1; color:var(--brass)}
+.langs button:hover{opacity:1}
+h1{
+  font-family:var(--display); font-weight:500; font-size:clamp(38px,11vw,46px);
+  line-height:1.02; letter-spacing:-.015em; margin:120px 0 14px;
+}
+.tag{margin:0 0 26px; max-width:34ch; color:rgba(241,236,223,.82); font-size:15.5px}
+.actions{display:grid; gap:10px}
+.btn{
+  display:block; width:100%; text-align:center; text-decoration:none; cursor:pointer;
+  font:inherit; font-weight:600; font-size:16px; padding:15px 18px; border-radius:10px;
+  border:1.5px solid var(--brass);
+}
+.btn.primary{background:var(--brass); color:var(--green)}
+.btn.primary:hover{background:#d4b36e}
+.btn.ghost{background:transparent; color:var(--bone)}
+.btn.ghost:hover{background:var(--green-2)}
+:focus-visible{outline:2px solid var(--brass); outline-offset:3px}
+.panel :focus-visible{outline-color:var(--ink)}
+
+/* contatos */
+.panel{padding:8px 26px 28px}
+.rows{list-style:none; margin:0; padding:0}
+.rows li{border-bottom:1px solid var(--rule)}
+.rows a,.rows .static{
+  display:grid; grid-template-columns:88px 1fr; align-items:baseline; gap:12px;
+  padding:16px 0; color:inherit; text-decoration:none;
+}
+.rows .k{color:var(--muted); font-size:14px}
+.rows .v{font-weight:500; overflow-wrap:anywhere}
+.rows a:hover .v{text-decoration:underline; text-underline-offset:3px}
+
+.site{margin-top:28px}
+.site h2{font-family:var(--display); font-weight:500; font-size:21px; margin:0 0 14px}
+.links{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:12px}
+.links a{
+  display:flex; justify-content:space-between; align-items:center; gap:8px;
+  padding:14px 14px; border:1px solid var(--rule); border-radius:10px;
+  color:inherit; text-decoration:none; font-weight:500; font-size:15px;
+}
+.links a:hover{border-color:var(--brass)}
+.links .arr{color:var(--brass)}
+.btn.outline{background:transparent; color:var(--ink)}
+.btn.outline:hover{background:var(--rule)}
+.qr{display:grid; grid-template-columns:132px 1fr; gap:18px; align-items:center; margin-top:26px}
+.qr .tile{background:#f8f5ee; border:1px solid var(--rule); border-radius:10px; padding:6px; line-height:0; transition:box-shadow .3s}
+.qr .tile svg{width:100%; height:auto; display:block}
+.qr p{margin:0; color:var(--muted); font-size:14.5px}
+.qr.flash .tile{box-shadow:0 0 0 3px var(--brass)}
+@media (prefers-reduced-motion: reduce){ .qr .tile{transition:none} }
+</style>
+</head>
+<body>
+<div class="wrap">
+<main class="card">
+  <section class="top">
+    <div class="bar">
+      <div class="brand"><img class="logo" src="/img/logo-180.png" width="64" height="64" alt=""><span>Sêmen MF do Brasil</span></div>
+      <div class="langs" role="group" aria-label="Idioma">
+        <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <h1>Daniel Franco</h1>
+    <p class="tag" data-t="tag"></p>
+    <div class="actions">
+      <a class="btn primary" id="wa" href="https://wa.me/5534984405811" target="_blank" rel="noopener" data-t="wa"></a>
+      <button class="btn ghost" type="button" id="save" data-t="save"></button>
+      <button class="share" type="button" id="share" data-t="share"></button>
+    </div>
+  </section>
+
+  <section class="panel">
+    <ul class="rows">
+      <li><a href="tel:+5534984405811"><span class="k" data-t="phone"></span><span class="v">+55 34 98440-5811</span></a></li>
+      <li><a href="mailto:do.franco@uol.com.br"><span class="k" data-t="email"></span><span class="v">do.franco@uol.com.br</span></a></li>
+      <li><a href="https://mfdobrasil.com/" target="_blank" rel="noopener"><span class="k" data-t="site"></span><span class="v">mfdobrasil.com</span></a></li>
+      <li><div class="static"><span class="k" data-t="base"></span><span class="v" data-t="city"></span></div></li>
+    </ul>
+    <nav class="site" aria-labelledby="site-h">
+      <h2 id="site-h" data-t="site_h"></h2>
+      <div class="links">
+        <a data-sec="exportacao" target="_blank" rel="noopener"><span data-t="s_exp"></span><span class="arr" aria-hidden="true">→</span></a>
+        <a data-sec="projetos" target="_blank" rel="noopener"><span data-t="s_proj"></span><span class="arr" aria-hidden="true">→</span></a>
+        <a data-sec="genetica" target="_blank" rel="noopener"><span data-t="s_gen"></span><span class="arr" aria-hidden="true">→</span></a>
+        <a data-sec="fotos" target="_blank" rel="noopener"><span data-t="s_fotos"></span><span class="arr" aria-hidden="true">→</span></a>
+      </div>
+      <a class="btn outline" data-sec="" target="_blank" rel="noopener" data-t="s_all"></a>
+    </nav>
+    <div class="qr" id="qr">
+      <div class="tile" role="img" aria-label="QR code"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 65" class="segno"><path class="qrline" stroke="#0d2a1c" d="M2 2.5h7m2 0h3m2 0h1m4 0h1m3 0h1m1 0h1m1 0h1m7 0h1m1 0h1m2 0h1m1 0h2m3 0h1m1 0h1m1 0h2m1 0h7m-61 1h1m5 0h1m2 0h1m3 0h1m1 0h2m2 0h4m3 0h1m2 0h5m1 0h3m1 0h2m1 0h5m1 0h1m2 0h2m1 0h1m5 0h1m-61 1h1m1 0h3m1 0h1m1 0h1m2 0h2m1 0h2m2 0h4m1 0h5m1 0h2m1 0h2m2 0h1m2 0h2m1 0h1m2 0h1m1 0h1m2 0h3m1 0h1m1 0h3m1 0h1m-61 1h1m1 0h3m1 0h1m1 0h1m2 0h4m1 0h4m1 0h3m4 0h1m2 0h2m2 0h3m3 0h3m2 0h1m1 0h3m1 0h1m1 0h1m1 0h3m1 0h1m-61 1h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h3m1 0h2m2 0h1m5 0h6m1 0h1m3 0h2m1 0h2m3 0h2m1 0h2m2 0h1m1 0h3m1 0h1m-61 1h1m5 0h1m1 0h3m1 0h1m3 0h1m1 0h1m1 0h3m2 0h1m1 0h2m3 0h1m2 0h1m1 0h1m2 0h3m2 0h1m2 0h1m1 0h1m3 0h1m5 0h1m-61 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-53 1h1m3 0h3m4 0h1m2 0h3m3 0h1m3 0h1m1 0h1m3 0h3m1 0h1m1 0h2m1 0h2m2 0h2m-53 1h1m1 0h5m3 0h1m1 0h1m2 0h4m6 0h1m1 0h6m1 0h3m1 0h2m1 0h1m1 0h1m1 0h4m1 0h3m1 0h5m-59 1h1m2 0h3m2 0h1m2 0h1m1 0h2m4 0h2m2 0h3m5 0h3m3 0h1m1 0h2m1 0h1m1 0h1m2 0h1m1 0h1m4 0h1m2 0h2m1 0h1m-57 1h7m2 0h1m1 0h1m2 0h2m1 0h4m3 0h1m5 0h1m1 0h1m7 0h1m2 0h1m3 0h2m2 0h3m1 0h2m-61 1h1m1 0h2m1 0h1m1 0h2m1 0h2m1 0h1m4 0h2m1 0h1m1 0h1m2 0h1m2 0h5m6 0h2m1 0h3m1 0h4m2 0h4m3 0h1m-59 1h2m1 0h3m3 0h1m2 0h3m2 0h4m1 0h1m2 0h4m1 0h1m2 0h2m2 0h1m1 0h2m2 0h4m1 0h1m1 0h3m3 0h2m-59 1h1m2 0h2m2 0h2m1 0h2m1 0h1m1 0h1m1 0h3m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m2 0h1m1 0h1m1 0h4m1 0h1m2 0h3m1 0h1m2 0h1m1 0h3m-57 1h1m2 0h2m1 0h3m2 0h4m1 0h2m3 0h2m4 0h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m3 0h2m1 0h2m1 0h2m1 0h1m1 0h2m1 0h3m-60 1h1m1 0h2m3 0h1m1 0h1m2 0h1m2 0h3m4 0h1m2 0h1m2 0h2m1 0h2m2 0h2m1 0h1m5 0h1m2 0h2m1 0h2m2 0h3m2 0h1m-58 1h4m2 0h3m1 0h3m1 0h1m1 0h2m1 0h1m2 0h1m2 0h1m2 0h3m1 0h1m2 0h1m1 0h5m2 0h2m2 0h2m2 0h1m2 0h3m-59 1h3m3 0h10m3 0h1m1 0h1m2 0h3m8 0h1m1 0h4m1 0h2m8 0h2m1 0h1m2 0h1m-60 1h2m2 0h3m3 0h2m2 0h3m2 0h1m1 0h2m1 0h2m1 0h2m4 0h2m1 0h2m1 0h1m1 0h4m1 0h4m6 0h4m-61 1h2m2 0h2m1 0h1m1 0h3m2 0h2m2 0h1m2 0h2m3 0h2m2 0h2m2 0h4m2 0h2m2 0h4m1 0h1m1 0h1m2 0h3m2 0h2m-59 1h1m2 0h4m4 0h1m1 0h3m1 0h3m2 0h3m1 0h2m1 0h2m1 0h3m2 0h1m1 0h3m3 0h2m4 0h1m3 0h1m1 0h1m-60 1h1m1 0h3m2 0h1m2 0h1m2 0h3m1 0h2m4 0h2m2 0h2m1 0h1m1 0h1m2 0h3m1 0h2m1 0h3m2 0h3m3 0h5m1 0h1m-60 1h3m2 0h2m2 0h3m5 0h1m4 0h6m1 0h3m3 0h1m1 0h1m1 0h1m2 0h5m1 0h1m1 0h1m9 0h1m-60 1h2m2 0h1m4 0h2m1 0h3m5 0h1m2 0h2m2 0h1m1 0h1m1 0h1m1 0h1m2 0h5m3 0h1m1 0h1m1 0h1m1 0h1m3 0h2m2 0h1m-59 1h1m2 0h3m1 0h2m2 0h1m3 0h1m1 0h1m2 0h1m2 0h1m2 0h10m1 0h2m3 0h1m4 0h2m1 0h1m5 0h4m-61 1h4m5 0h1m1 0h1m3 0h2m1 0h1m2 0h3m4 0h4m2 0h2m1 0h2m1 0h2m1 0h1m4 0h2m1 0h1m1 0h3m2 0h1m-59 1h7m2 0h1m1 0h1m2 0h1m4 0h4m3 0h5m2 0h1m2 0h1m3 0h1m1 0h3m8 0h3m1 0h1m1 0h2m-61 1h4m1 0h1m4 0h1m1 0h1m1 0h3m2 0h2m2 0h1m1 0h1m3 0h3m1 0h3m1 0h1m1 0h1m1 0h1m2 0h2m2 0h2m2 0h1m1 0h1m1 0h2m-58 1h1m1 0h1m1 0h7m1 0h1m1 0h3m1 0h1m2 0h1m2 0h2m1 0h6m1 0h3m1 0h1m5 0h1m1 0h3m2 0h6m1 0h1m-58 1h1m2 0h1m3 0h5m1 0h2m2 0h2m1 0h5m2 0h1m3 0h1m4 0h1m4 0h3m7 0h1m3 0h1m3 0h1m-59 1h1m1 0h1m1 0h1m1 0h3m1 0h1m5 0h1m1 0h2m1 0h1m1 0h4m1 0h1m1 0h2m2 0h3m1 0h2m3 0h1m6 0h1m1 0h1m1 0h2m1 0h2m-61 1h2m1 0h2m3 0h2m1 0h7m1 0h1m5 0h1m1 0h2m3 0h2m3 0h1m1 0h1m1 0h4m3 0h1m2 0h2m3 0h1m2 0h2m-60 1h2m1 0h6m1 0h2m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h6m1 0h3m4 0h2m3 0h5m1 0h5m1 0h3m-58 1h3m4 0h2m5 0h1m3 0h1m1 0h2m3 0h1m8 0h1m1 0h4m1 0h2m3 0h1m1 0h2m1 0h2m1 0h2m1 0h1m-59 1h1m2 0h3m2 0h1m3 0h1m4 0h1m2 0h1m4 0h1m1 0h7m2 0h3m2 0h2m1 0h3m1 0h1m1 0h4m2 0h3m-60 1h1m3 0h1m2 0h2m2 0h1m1 0h4m2 0h2m2 0h2m2 0h1m1 0h1m4 0h2m4 0h1m4 0h4m4 0h2m-55 1h1m2 0h1m1 0h1m1 0h2m2 0h1m2 0h2m1 0h3m1 0h1m1 0h2m2 0h3m1 0h1m3 0h1m1 0h2m2 0h1m4 0h2m2 0h2m1 0h1m2 0h1m-57 1h1m5 0h1m1 0h2m1 0h5m2 0h1m1 0h1m1 0h2m1 0h1m3 0h1m1 0h1m2 0h3m4 0h1m2 0h1m5 0h1m1 0h1m1 0h1m3 0h2m-61 1h2m1 0h5m1 0h1m1 0h2m2 0h1m2 0h1m2 0h1m1 0h2m2 0h1m1 0h1m2 0h3m1 0h1m1 0h2m1 0h1m3 0h1m3 0h2m3 0h2m3 0h1m-60 1h4m1 0h1m4 0h2m3 0h1m1 0h1m2 0h4m1 0h1m1 0h3m3 0h1m1 0h1m2 0h1m5 0h1m1 0h1m2 0h2m1 0h2m2 0h1m3 0h1m-61 1h1m2 0h1m2 0h3m4 0h2m2 0h1m3 0h4m3 0h3m2 0h2m1 0h2m5 0h1m1 0h1m1 0h5m1 0h1m2 0h2m2 0h1m-61 1h2m7 0h1m2 0h1m1 0h5m1 0h1m3 0h2m5 0h2m2 0h3m1 0h1m1 0h5m3 0h1m3 0h1m1 0h1m2 0h1m1 0h1m-58 1h1m2 0h2m4 0h2m1 0h1m1 0h4m2 0h2m1 0h3m4 0h1m1 0h3m4 0h1m2 0h2m1 0h1m1 0h2m2 0h1m1 0h5m-60 1h5m1 0h2m1 0h1m3 0h3m1 0h1m1 0h1m3 0h1m1 0h1m2 0h1m3 0h1m5 0h2m1 0h1m2 0h1m1 0h1m1 0h4m6 0h2m-61 1h1m5 0h1m2 0h1m2 0h2m1 0h4m1 0h2m1 0h1m1 0h1m2 0h3m4 0h3m3 0h3m1 0h2m1 0h1m1 0h3m2 0h5m-59 1h3m1 0h1m3 0h1m2 0h1m5 0h1m1 0h1m3 0h1m2 0h1m1 0h5m5 0h1m2 0h2m3 0h3m3 0h3m1 0h3m-56 1h3m2 0h2m2 0h2m3 0h1m4 0h2m2 0h3m2 0h1m2 0h1m1 0h1m3 0h3m1 0h1m1 0h2m2 0h1m1 0h2m2 0h2m1 0h1m-61 1h2m2 0h1m2 0h1m3 0h1m2 0h1m1 0h1m4 0h1m2 0h1m2 0h1m3 0h1m4 0h1m2 0h1m2 0h1m2 0h2m1 0h4m5 0h1m2 0h1m-61 1h3m1 0h4m2 0h1m2 0h1m1 0h3m2 0h6m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m3 0h3m3 0h2m1 0h1m1 0h7m-60 1h1m1 0h3m3 0h2m1 0h2m1 0h5m2 0h4m3 0h1m1 0h1m5 0h2m1 0h1m2 0h3m2 0h2m2 0h2m7 0h1m-59 1h5m3 0h4m3 0h3m1 0h1m1 0h2m1 0h4m3 0h2m1 0h1m1 0h2m2 0h1m2 0h1m1 0h1m5 0h5m1 0h2m-61 1h3m1 0h1m2 0h2m1 0h1m1 0h1m3 0h2m1 0h3m1 0h2m1 0h3m1 0h5m2 0h3m1 0h1m3 0h6m1 0h1m1 0h1m1 0h1m2 0h1m-60 1h4m2 0h2m3 0h1m1 0h1m1 0h6m1 0h2m1 0h1m1 0h6m2 0h5m3 0h1m1 0h12m1 0h1m1 0h1m-53 1h1m2 0h1m7 0h1m1 0h2m1 0h2m1 0h2m3 0h1m2 0h2m5 0h3m7 0h1m3 0h2m1 0h1m-60 1h7m2 0h2m2 0h1m2 0h1m3 0h2m1 0h2m3 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h2m7 0h1m1 0h1m1 0h3m1 0h1m-61 1h1m5 0h1m1 0h2m2 0h2m1 0h1m5 0h4m1 0h3m3 0h1m1 0h1m1 0h1m2 0h1m5 0h3m4 0h1m3 0h1m-57 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h3m2 0h2m1 0h6m1 0h2m1 0h1m2 0h1m4 0h2m1 0h1m3 0h5m1 0h2m-60 1h1m1 0h3m1 0h1m1 0h1m2 0h1m3 0h1m7 0h2m1 0h1m3 0h1m1 0h1m4 0h1m1 0h4m5 0h1m3 0h3m1 0h1m3 0h1m-61 1h1m1 0h3m1 0h1m1 0h1m2 0h4m1 0h1m1 0h2m5 0h2m1 0h2m1 0h5m2 0h1m1 0h1m2 0h1m1 0h1m1 0h5m3 0h1m2 0h1m1 0h1m-61 1h1m5 0h1m2 0h2m1 0h6m1 0h3m1 0h2m1 0h2m1 0h6m1 0h1m2 0h1m2 0h1m1 0h1m1 0h2m3 0h1m1 0h3m4 0h1m-61 1h7m1 0h1m1 0h1m4 0h1m1 0h3m4 0h3m2 0h2m3 0h3m4 0h3m1 0h4m1 0h1m2 0h1m2 0h2m1 0h2"/></svg></div>
+      <p data-t="qr"></p>
+    </div>
+  </section>
+</main>
+</div>
+
+<script>
+(function(){
+  var T = {
+    pt:{ html:"pt-BR",
+      tag:"Genética zebuína brasileira para a África, a Ásia e a América Latina. Família Franco, em Uberaba desde 1930.",
+      wa:"Conversar no WhatsApp", save:"Salvar contato",
+      phone:"Telefone", email:"E-mail", site:"Site", base:"Sede", city:"Uberaba – MG, Brasil",
+      qr:"Aponte a câmera do celular para o código e salve este contato na agenda.",
+      share:"Compartilhar este cartão", copied:"Link copiado!",
+      site_h:"Conheça a MF do Brasil", s_exp:"Exportação", s_proj:"Projetos", s_gen:"Genética", s_fotos:"Fotos", s_all:"Visitar o site completo",
+      msg:"Olá, Daniel! Vi seu cartão digital da MF do Brasil e gostaria de conversar." },
+    fr:{ html:"fr",
+      tag:"Génétique zébuine brésilienne pour l’Afrique, l’Asie et l’Amérique latine. Famille Franco, à Uberaba depuis 1930.",
+      wa:"Écrire sur WhatsApp", save:"Enregistrer le contact",
+      phone:"Téléphone", email:"E-mail", site:"Site web", base:"Siège", city:"Uberaba – MG, Brésil",
+      qr:"Scannez le code avec l’appareil photo de votre téléphone pour enregistrer ce contact.",
+      share:"Partager cette carte", copied:"Lien copié !",
+      site_h:"Découvrez MF do Brasil", s_exp:"Exportation", s_proj:"Projets", s_gen:"Génétique", s_fotos:"Photos", s_all:"Visiter le site",
+      msg:"Bonjour Daniel ! J’ai vu votre carte de visite MF do Brasil et j’aimerais échanger avec vous." },
+    en:{ html:"en",
+      tag:"Brazilian Zebu genetics for Africa, Asia and Latin America. The Franco family, in Uberaba since 1930.",
+      wa:"Message on WhatsApp", save:"Save contact",
+      phone:"Phone", email:"Email", site:"Website", base:"Based in", city:"Uberaba – MG, Brazil",
+      qr:"Point your phone camera at the code to save this contact.",
+      share:"Share this card", copied:"Link copied!",
+      site_h:"Discover MF do Brasil", s_exp:"Export", s_proj:"Projects", s_gen:"Genetics", s_fotos:"Photos", s_all:"Visit the full website",
+      msg:"Hello Daniel! I saw your MF do Brasil digital card and would like to talk." }
+  };
+  var cur = T.pt;
+  function setLang(l){
+    var d = T[l] || T.pt;
+    cur = d;
+    document.documentElement.lang = d.html;
+    document.getElementById("wa").href = "https://wa.me/5534984405811?text=" + encodeURIComponent(d.msg);
+    document.querySelectorAll("[data-sec]").forEach(function(a){
+      var s = a.getAttribute("data-sec");
+      a.href = "https://mfdobrasil.com/?lang=" + l + (s ? "#" + s : "");
+    });
+    document.querySelectorAll("[data-t]").forEach(function(el){ el.textContent = d[el.getAttribute("data-t")]; });
+    document.querySelectorAll(".langs button").forEach(function(b){
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === l));
+    });
+  }
+  var nav = (navigator.language || "pt").slice(0,2).toLowerCase();
+  setLang(T[nav] ? nav : "pt");
+  document.querySelectorAll(".langs button").forEach(function(b){
+    b.addEventListener("click", function(){ setLang(b.getAttribute("data-lang")); });
+  });
+
+  var VCARD = [
+    "BEGIN:VCARD","VERSION:3.0","N:Franco;Daniel;;;","FN:Daniel Franco",
+    "ORG:Sêmen MF do Brasil","TEL;TYPE=CELL:+5534984405811",
+    "EMAIL:do.franco@uol.com.br","URL:https://mfdobrasil.com",
+    "ADR;TYPE=WORK:;;;Uberaba;MG;;Brasil","END:VCARD"
+  ].join("\r\n");
+
+  var shareBtn = document.getElementById("share");
+  shareBtn.addEventListener("click", function(){
+    var url = "https://mfdobrasil.com/daniel/";
+    if (navigator.share) {
+      navigator.share({ title: "Daniel Franco | Sêmen MF do Brasil", url: url }).catch(function(){});
+      return;
+    }
+    var done = function(){
+      shareBtn.textContent = cur.copied;
+      setTimeout(function(){ shareBtn.textContent = cur.share; }, 1800);
+    };
+    if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function(){});
+  });
+
+  document.getElementById("save").addEventListener("click", function(){
+    // Dentro do visualizador do claude.ai o download de .vcf é bloqueado: destaca o QR code.
+    if (window.claude) {
+      var q = document.getElementById("qr");
+      q.scrollIntoView({behavior:"smooth", block:"center"});
+      q.classList.add("flash");
+      setTimeout(function(){ q.classList.remove("flash"); }, 1800);
+      return;
+    }
+    try {
+      var url = URL.createObjectURL(new Blob([VCARD], {type:"text/vcard;charset=utf-8"}));
+      var a = document.createElement("a");
+      a.href = url; a.download = "daniel-franco.vcf";
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 2000);
+    } catch (e) {
+      document.getElementById("qr").scrollIntoView({block:"center"});
+    }
+  });
+})();
+</script>
+</body>
+</html>

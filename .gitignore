@@ -1,0 +1,11 @@
+# Material bruto do cliente, boletos e documentos (não publicar)
+_material-daniel/
+
+# Vídeos que saíram do site
+video/exporta-1.mp4
+video/exporta-3.mp4
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
