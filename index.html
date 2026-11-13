@@ -348,8 +348,11 @@ a.via:hover{transform:translateY(-3px);box-shadow:var(--sombra);border-color:var
 .setor .mais{margin-top:auto;padding-top:6px;display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:.85rem;color:var(--verde3)}
 .setor .mais .ic{width:18px;height:18px;padding:0;background:none;color:inherit;border-radius:0;transition:transform .2s ease}
 .setor:hover .mais .ic{transform:translateX(4px)}
-@media (min-width:640px){.setores{grid-template-columns:1fr 1fr;gap:18px}}
-@media (min-width:1100px){.setores{grid-template-columns:repeat(4,1fr)}}
+.setor.breve{cursor:default}
+.setor.breve:hover{transform:none;box-shadow:none;border-color:var(--linha-escura)}
+.setor .selo{margin-top:auto;align-self:flex-start;padding:5px 12px;border-radius:999px;background:var(--areia,#f3ede0);border:1px dashed var(--ouro);font-weight:800;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:var(--verde3)}
+@media (min-width:640px){.setores{grid-template-columns:1fr 1fr;gap:18px}.setor.breve{grid-column:1/-1}}
+@media (min-width:1100px){.setores{grid-template-columns:repeat(5,1fr)}.setor.breve{grid-column:auto}.setor{padding:24px 20px 22px}.setor h3{font-size:1.22rem}}
 @media (min-width:640px){.feitos li:last-child:nth-child(odd){grid-column:1/-1}}
 
 /* exportacao */
@@ -536,6 +539,7 @@ li.oculto{display:none !important}
       <a class="setor rv" style="--d:2" href="#avicultura"><svg class="ic" aria-hidden="true"><use href="#i-ovo"/></svg><h3 data-i="st2t">Avicultura</h3><p data-i="st2">Produção avícola, tecnologia e desenvolvimento da atividade.</p><span class="mais"><span data-i="st_mais">Saiba mais</span><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></a>
       <a class="setor rv" style="--d:3" href="#projetos"><svg class="ic" aria-hidden="true"><use href="#i-globo"/></svg><h3 data-i="st3t">Projetos internacionais</h3><p data-i="st3">Cooperação, capacitação e desenvolvimento agropecuário.</p><span class="mais"><span data-i="st_mais">Saiba mais</span><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></a>
       <a class="setor rv" style="--d:4" href="#historia"><svg class="ic" aria-hidden="true"><use href="#i-livro"/></svg><h3 data-i="st4t">Nossa história</h3><p data-i="st4">Tradição da família Franco desde 1930.</p><span class="mais"><span data-i="st_mais">Saiba mais</span><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></a>
+      <div class="setor breve rv" style="--d:5" id="educacao"><svg class="ic" aria-hidden="true"><use href="#i-capelo"/></svg><h3 data-i="st5t">Educação e formação profissional para o agronegócio</h3><span class="selo" data-i="st_atual">Em atualização</span></div>
     </div>
   </div>
 </section>
@@ -858,6 +862,7 @@ li.oculto{display:none !important}
       st2t: "Avicultura", st2: "Produção avícola, tecnologia e desenvolvimento da atividade.",
       st3t: "Projetos internacionais", st3: "Cooperação, capacitação e desenvolvimento agropecuário.",
       st4t: "Nossa história", st4: "Tradição da família Franco desde 1930.",
+      st5t: "Educação e formação profissional para o agronegócio", st_atual: "Em atualização",
       h_mis: "Missões e <em>parcerias internacionais</em>",
       sub_mis: "Acordos, encontros institucionais e visitas técnicas que levam a genética e o conhecimento brasileiros a outros países.",
       mi1: "Genética zebuína brasileira para a África",
@@ -1006,6 +1011,7 @@ li.oculto{display:none !important}
       st2t: "Aviculture", st2: "Production avicole, technologie et développement de la filière.",
       st3t: "Projets internationaux", st3: "Coopération, renforcement des capacités et développement agricole.",
       st4t: "Notre histoire", st4: "Tradition de la famille Franco depuis 1930.",
+      st5t: "Éducation et formation professionnelle pour l'agrobusiness", st_atual: "En cours de mise à jour",
       h_mis: "Missions et <em>partenariats internationaux</em>",
       sub_mis: "Accords, rencontres institutionnelles et visites techniques qui portent la génétique et le savoir-faire brésiliens dans d'autres pays.",
       mi1: "Génétique zébu brésilienne pour l'Afrique",
@@ -1154,6 +1160,7 @@ li.oculto{display:none !important}
       st2t: "Poultry", st2: "Poultry production, technology and sector development.",
       st3t: "International projects", st3: "Cooperation, capacity building and agricultural development.",
       st4t: "Our history", st4: "A Franco family tradition since 1930.",
+      st5t: "Education and professional training for agribusiness", st_atual: "Coming soon",
       h_mis: "Missions and <em>international partnerships</em>",
       sub_mis: "Agreements, institutional meetings and technical visits that take Brazilian genetics and know-how to other countries.",
       mi1: "Brazilian Zebu genetics for Africa",
