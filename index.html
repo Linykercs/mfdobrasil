@@ -352,6 +352,24 @@ a.via:hover{transform:translateY(-3px);box-shadow:var(--sombra);border-color:var
 .setor.breve:hover{transform:none;box-shadow:none;border-color:var(--linha-escura)}
 .setor .selo{margin-top:auto;align-self:flex-start;padding:5px 12px;border-radius:999px;background:var(--areia,#f3ede0);border:1px dashed var(--ouro);font-weight:800;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:var(--verde3)}
 @media (min-width:640px){.setores{grid-template-columns:1fr 1fr;gap:18px}.setor.breve{grid-column:1/-1}}
+/* raças (textos do Daniel) */
+.racas a{color:inherit;text-decoration:none;display:block}
+.racas a:hover strong{color:var(--ouro)}
+.raca-art{display:grid;gap:24px;align-items:start;padding:40px 0;border-top:1px solid var(--linha-escura);scroll-margin-top:90px}
+.raca-art:first-of-type{border-top:0;padding-top:8px}
+.raca-art h3{font:600 clamp(1.8rem,4.4vw,2.6rem)/1.1 var(--serif);color:var(--verde)}
+.raca-art .tag{font-weight:800;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--verde3);margin:8px 0 18px}
+.raca-art p{color:var(--tinta2);line-height:1.68;margin-bottom:14px}
+.raca-art details summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:.9rem;color:var(--verde3);padding:6px 0;margin-bottom:10px}
+.raca-art details summary::-webkit-details-marker{display:none}
+.raca-art details summary .ic{width:18px;height:18px;transition:transform .2s ease}
+.raca-art details[open] summary .ic{transform:rotate(90deg)}
+.raca-art details[open] .ab,.raca-art details:not([open]) .fe{display:none}
+.raca-art .visao{margin-top:8px;padding:20px 22px 8px;border-left:4px solid var(--ouro);background:#fff;border-radius:0 var(--raio) var(--raio) 0}
+.raca-art .visao h4{font:600 1.15rem/1.2 var(--serif);color:var(--verde);margin-bottom:10px}
+.raca-art figure figcaption{font-size:.75rem;color:var(--tinta2);margin-top:10px;text-align:right}
+.lema{text-align:center;font:italic 600 clamp(1.05rem,2.4vw,1.3rem)/1.4 var(--serif);color:var(--verde);max-width:760px;margin:16px auto 0}
+@media (min-width:900px){.raca-art.com-foto{grid-template-columns:1fr 1.1fr;gap:56px}.raca-art.inv figure{order:2}.raca-art figure{position:sticky;top:100px}.raca-art .texto-r{max-width:780px}}
 @media (min-width:1100px){.setores{grid-template-columns:repeat(5,1fr)}.setor.breve{grid-column:auto}.setor{padding:24px 20px 22px}.setor h3{font-size:1.22rem}}
 @media (min-width:640px){.feitos li:last-child:nth-child(odd){grid-column:1/-1}}
 
@@ -618,10 +636,10 @@ li.oculto{display:none !important}
       <p class="sub" data-i="c2p">Trabalhamos com linhagens de alto desempenho:</p>
     </div>
     <ul class="racas">
-      <li class="rv" style="--d:1"><small aria-hidden="true">01</small><strong>Nelore</strong></li>
+      <li class="rv" style="--d:1"><a href="#nelore"><small aria-hidden="true">01</small><strong>Nelore</strong></a></li>
       <li class="rv" style="--d:2"><small aria-hidden="true">02</small><strong data-i="r2">Gir Leiteiro</strong></li>
-      <li class="rv" style="--d:3"><small aria-hidden="true">03</small><strong>Girolando</strong></li>
-      <li class="rv" style="--d:4"><small aria-hidden="true">04</small><strong>Guzerá</strong></li>
+      <li class="rv" style="--d:3"><a href="#girolando"><small aria-hidden="true">03</small><strong>Girolando</strong></a></li>
+      <li class="rv" style="--d:4"><a href="#guzera"><small aria-hidden="true">04</small><strong>Guzerá</strong></a></li>
     </ul>
     <p class="nota rv" data-i="r_nota">E outras linhagens zebuínas de alto desempenho.</p>
     <ul class="ganhos">
@@ -630,6 +648,84 @@ li.oculto{display:none !important}
       <li class="rv" style="--d:3"><svg class="ic" aria-hidden="true"><use href="#i-pulso"/></svg><span data-i="c2c">Melhor conversão alimentar</span></li>
       <li class="rv" style="--d:4"><svg class="ic" aria-hidden="true"><use href="#i-globo"/></svg><span data-i="c2d">Ideal para a África e regiões tropicais</span></li>
     </ul>
+  </div>
+</section>
+
+<section class="sec areia claro" id="racas">
+  <div class="wrap">
+    <div class="cab rv">
+      <span class="sobrolho" data-i="rz_k">Raças</span>
+      <h2 data-i="rz_h">Nossas <em>raças</em></h2>
+    </div>
+
+    <article class="raca-art" id="nelore">
+      <div class="texto-r rv">
+        <h3>Nelore</h3>
+        <p class="tag" data-i="ne_s">Genética, rusticidade e eficiência na pecuária de corte</p>
+        <p data-i="ne_1">Originária da Índia e introduzida no Brasil no século XIX, a raça Nelore encontrou nas condições tropicais brasileiras o ambiente ideal para seu desenvolvimento. Ao longo de gerações, o trabalho de seleção e melhoramento genético transformou o Nelore em uma das principais bases da pecuária de corte nacional, reconhecida por sua rusticidade, resistência e extraordinária capacidade de adaptação.</p>
+        <details>
+          <summary><span class="ab" data-i="rz_mais">Ler mais</span><span class="fe" data-i="rz_menos">Ler menos</span><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></summary>
+          <p data-i="ne_2">Consolidado como protagonista da produção brasileira de carne bovina, o Nelore destaca-se pela eficiência alimentar, fertilidade, longevidade, habilidade materna e desempenho produtivo. Sua capacidade de aproveitar pastagens tropicais e apresentar bons resultados em diferentes sistemas de criação faz da raça uma referência para a produção de carne em escala, com competitividade e sustentabilidade.</p>
+          <p data-i="ne_3">Os animais Nelore apresentam características funcionais especialmente valorizadas na pecuária de corte, como resistência ao calor, adaptação às condições tropicais, boa conformação muscular, facilidade de parto e eficiência reprodutiva. Essas qualidades contribuem para a produtividade dos rebanhos, a otimização dos custos de criação e a valorização dos animais no mercado.</p>
+          <p data-i="ne_4">O contínuo avanço do melhoramento genético tem impulsionado ganhos em precocidade, desempenho ponderal, qualidade de carcaça e eficiência produtiva, consolidando o Nelore como uma genética estratégica para atender às crescentes exigências dos mercados nacional e internacional de carne bovina.</p>
+          <div class="visao">
+            <h4 data-i="rz_visao">A visão da MF do Brasil</h4>
+            <p data-i="ne_v1">Com uma trajetória na pecuária que remonta a 1930, a MF do Brasil reconhece no Nelore uma expressão da excelência da seleção genética brasileira e de sua capacidade de produzir animais adaptados, eficientes e competitivos.</p>
+            <p data-i="ne_v2">Nossa atuação valoriza animais que reúnam qualidade genética, desenvolvimento muscular, fertilidade, rusticidade e potencial produtivo, características fundamentais para a formação de rebanhos superiores e para o atendimento às diferentes demandas da pecuária de corte.</p>
+            <p data-i="ne_v3">Acreditamos que a combinação entre tradição, seleção criteriosa e evolução genética é o caminho para transformar potencial em resultados, contribuindo para uma pecuária mais rentável, sustentável e conectada às oportunidades do mercado global.</p>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <article class="raca-art com-foto" id="girolando">
+      <figure class="rv">
+        <div class="foto"><img src="img/vaca-girolando.jpg" srcset="img/vaca-girolando-p.jpg 800w, img/vaca-girolando.jpg 1600w" sizes="(min-width:900px) 520px, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="Vaca Girolando preta no pasto" data-i-alt="gi_alt"></div>
+        <figcaption data-i="gi_cred">Foto: Associação Brasileira dos Criadores de Girolando</figcaption>
+      </figure>
+      <div class="texto-r rv" style="--d:1">
+        <h3>Girolando</h3>
+        <p class="tag" data-i="gi_s">Genética, produtividade e eficiência na pecuária leiteira</p>
+        <p data-i="gi_1">Genuinamente brasileira, a raça Girolando surgiu na década de 1940, a partir do cruzamento entre as raças Gir e Holandesa, combinando a rusticidade, a resistência e a capacidade de adaptação aos climas tropicais do Gir com o elevado potencial produtivo da raça Holandesa.</p>
+        <details>
+          <summary><span class="ab" data-i="rz_mais">Ler mais</span><span class="fe" data-i="rz_menos">Ler menos</span><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></summary>
+          <p data-i="gi_2">Consolidado como um dos grandes pilares da pecuária leiteira nacional, o Girolando destaca-se pela alta produção de leite, fertilidade, precocidade, longevidade e eficiência reprodutiva. Sua versatilidade permite excelente desempenho em diferentes condições climáticas e sistemas de produção, reunindo características fundamentais para uma atividade leiteira moderna, competitiva e sustentável.</p>
+          <p data-i="gi_3">As matrizes Girolando apresentam atributos funcionais especialmente valorizados na produção de leite, como boa conformação de úbere, aprumos resistentes, capacidade de termorregulação e eficiência alimentar. Essas qualidades contribuem para a redução dos custos de produção, maior vida produtiva e melhor retorno econômico ao produtor.</p>
+          <p data-i="gi_4">O contínuo avanço do melhoramento genético tem permitido à raça alcançar resultados cada vez mais expressivos em produtividade e qualidade, tornando a escolha de animais geneticamente superiores um fator decisivo para a evolução dos rebanhos.</p>
+          <div class="visao">
+            <h4 data-i="rz_visao">A visão da MF do Brasil</h4>
+            <p data-i="gi_v1">Com uma trajetória na pecuária que remonta a 1930, a MF do Brasil reconhece no Girolando uma combinação estratégica entre tradição, evolução genética e eficiência produtiva.</p>
+            <p data-i="gi_v2">Nossa atuação valoriza animais que reúnam qualidade genética, funcionalidade, potencial leiteiro e capacidade de adaptação, características essenciais para a formação e o aprimoramento de rebanhos de alto desempenho.</p>
+            <p data-i="gi_v3">Acreditamos que o verdadeiro valor da genética está em sua capacidade de transformar potencial em resultados, contribuindo para uma pecuária mais produtiva, rentável e preparada para os desafios do futuro.</p>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <article class="raca-art com-foto inv" id="guzera">
+      <figure class="rv">
+        <div class="foto"><img src="img/novilhas-5.webp" width="1259" height="702" loading="lazy" decoding="async" alt="Cinco novilhas Guzerá" data-i-alt="g3"></div>
+      </figure>
+      <div class="texto-r rv" style="--d:1">
+        <h3>Guzerá</h3>
+        <p class="tag" data-i="gu_s">Dupla aptidão, rusticidade e eficiência na produção de leite e carne</p>
+        <p data-i="gu_1">Originária da Índia, onde é conhecida como Kankrej, a raça Guzerá chegou ao Brasil no século XIX e consolidou-se como uma das mais tradicionais e versáteis raças zebuínas. Reconhecida por seu porte imponente, resistência e extraordinária capacidade de adaptação, reúne uma característica estratégica para a pecuária moderna: a dupla aptidão para produção de leite e carne, aliando produtividade, rusticidade e eficiência econômica.</p>
+        <details>
+          <summary><span class="ab" data-i="rz_mais">Ler mais</span><span class="fe" data-i="rz_menos">Ler menos</span><svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></summary>
+          <p data-i="gu_2">Com reconhecida vocação produtiva, o Guzerá destaca-se pela produção leiteira, qualidade de carcaça, ganho de peso, fertilidade, longevidade e eficiência alimentar. Sua capacidade de aproveitar pastagens tropicais e suportar condições climáticas adversas permite desenvolver sistemas de produção competitivos, especialmente em regiões de altas temperaturas e disponibilidade variável de alimentos.</p>
+          <p data-i="gu_3">As matrizes Guzerá apresentam atributos valorizados na pecuária de dupla aptidão, como habilidade materna, produção de leite, resistência ao calor e capacidade reprodutiva. Os machos destacam-se pelo desenvolvimento corporal, potencial de produção de carne e contribuição genética para cruzamentos. Essas características proporcionam maior versatilidade aos rebanhos, permitindo integrar a produção leiteira à produção de animais destinados ao mercado de carne.</p>
+          <p data-i="gu_4">A origem asiática da raça, sua longa trajetória de seleção e sua utilização em cruzamentos na África reforçam sua relevância para regiões tropicais. Na África e na Ásia, onde a adaptação ao calor e a eficiência dos recursos alimentares são fundamentais, o Guzerá representa uma alternativa genética especialmente promissora para fortalecer a produção de leite e carne e contribuir para a segurança alimentar.</p>
+          <div class="visao">
+            <h4 data-i="rz_visao">A visão da MF do Brasil</h4>
+            <p data-i="gu_v1">Com uma trajetória na pecuária que remonta a 1930, a MF do Brasil reconhece no Guzerá uma genética de grande valor estratégico, capaz de integrar duas atividades essenciais à segurança alimentar: a produção de leite e de carne.</p>
+            <p data-i="gu_v2">Nossa atuação valoriza animais que reúnam qualidade genética, rusticidade, eficiência reprodutiva, potencial leiteiro e desempenho de corte, características fundamentais para o desenvolvimento de rebanhos produtivos e adaptados às diferentes realidades da pecuária tropical, com especial atenção às oportunidades de desenvolvimento agropecuário na África e na Ásia.</p>
+            <p data-i="gu_v3">Acreditamos que a evolução genética, aliada à tradição e à seleção criteriosa, é fundamental para transformar potencial produtivo em resultados concretos. O Guzerá representa essa visão, oferecendo oportunidades para uma pecuária mais eficiente, rentável e sustentável, capaz de contribuir para o crescimento da produção e o fortalecimento da segurança alimentar em diferentes regiões do mundo.</p>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <p class="lema rv" data-i="rz_lema">MF do Brasil — desde 1930, tradição que atravessa gerações. Genética que constrói o futuro.</p>
   </div>
 </section>
 
@@ -863,6 +959,33 @@ li.oculto{display:none !important}
       st3t: "Projetos internacionais", st3: "Cooperação, capacitação e desenvolvimento agropecuário.",
       st4t: "Nossa história", st4: "Tradição da família Franco desde 1930.",
       st5t: "Educação e formação profissional para o agronegócio", st_atual: "Em atualização",
+      rz_k: "Raças", rz_h: "Nossas <em>raças</em>", rz_mais: "Ler mais", rz_menos: "Ler menos", rz_visao: "A visão da MF do Brasil",
+      rz_lema: "MF do Brasil — desde 1930, tradição que atravessa gerações. Genética que constrói o futuro.",
+      ne_s: "Genética, rusticidade e eficiência na pecuária de corte",
+      ne_1: "Originária da Índia e introduzida no Brasil no século XIX, a raça Nelore encontrou nas condições tropicais brasileiras o ambiente ideal para seu desenvolvimento. Ao longo de gerações, o trabalho de seleção e melhoramento genético transformou o Nelore em uma das principais bases da pecuária de corte nacional, reconhecida por sua rusticidade, resistência e extraordinária capacidade de adaptação.",
+      ne_2: "Consolidado como protagonista da produção brasileira de carne bovina, o Nelore destaca-se pela eficiência alimentar, fertilidade, longevidade, habilidade materna e desempenho produtivo. Sua capacidade de aproveitar pastagens tropicais e apresentar bons resultados em diferentes sistemas de criação faz da raça uma referência para a produção de carne em escala, com competitividade e sustentabilidade.",
+      ne_3: "Os animais Nelore apresentam características funcionais especialmente valorizadas na pecuária de corte, como resistência ao calor, adaptação às condições tropicais, boa conformação muscular, facilidade de parto e eficiência reprodutiva. Essas qualidades contribuem para a produtividade dos rebanhos, a otimização dos custos de criação e a valorização dos animais no mercado.",
+      ne_4: "O contínuo avanço do melhoramento genético tem impulsionado ganhos em precocidade, desempenho ponderal, qualidade de carcaça e eficiência produtiva, consolidando o Nelore como uma genética estratégica para atender às crescentes exigências dos mercados nacional e internacional de carne bovina.",
+      ne_v1: "Com uma trajetória na pecuária que remonta a 1930, a MF do Brasil reconhece no Nelore uma expressão da excelência da seleção genética brasileira e de sua capacidade de produzir animais adaptados, eficientes e competitivos.",
+      ne_v2: "Nossa atuação valoriza animais que reúnam qualidade genética, desenvolvimento muscular, fertilidade, rusticidade e potencial produtivo, características fundamentais para a formação de rebanhos superiores e para o atendimento às diferentes demandas da pecuária de corte.",
+      ne_v3: "Acreditamos que a combinação entre tradição, seleção criteriosa e evolução genética é o caminho para transformar potencial em resultados, contribuindo para uma pecuária mais rentável, sustentável e conectada às oportunidades do mercado global.",
+      gi_alt: "Vaca Girolando preta no pasto", gi_cred: "Foto: Associação Brasileira dos Criadores de Girolando",
+      gi_s: "Genética, produtividade e eficiência na pecuária leiteira",
+      gi_1: "Genuinamente brasileira, a raça Girolando surgiu na década de 1940, a partir do cruzamento entre as raças Gir e Holandesa, combinando a rusticidade, a resistência e a capacidade de adaptação aos climas tropicais do Gir com o elevado potencial produtivo da raça Holandesa.",
+      gi_2: "Consolidado como um dos grandes pilares da pecuária leiteira nacional, o Girolando destaca-se pela alta produção de leite, fertilidade, precocidade, longevidade e eficiência reprodutiva. Sua versatilidade permite excelente desempenho em diferentes condições climáticas e sistemas de produção, reunindo características fundamentais para uma atividade leiteira moderna, competitiva e sustentável.",
+      gi_3: "As matrizes Girolando apresentam atributos funcionais especialmente valorizados na produção de leite, como boa conformação de úbere, aprumos resistentes, capacidade de termorregulação e eficiência alimentar. Essas qualidades contribuem para a redução dos custos de produção, maior vida produtiva e melhor retorno econômico ao produtor.",
+      gi_4: "O contínuo avanço do melhoramento genético tem permitido à raça alcançar resultados cada vez mais expressivos em produtividade e qualidade, tornando a escolha de animais geneticamente superiores um fator decisivo para a evolução dos rebanhos.",
+      gi_v1: "Com uma trajetória na pecuária que remonta a 1930, a MF do Brasil reconhece no Girolando uma combinação estratégica entre tradição, evolução genética e eficiência produtiva.",
+      gi_v2: "Nossa atuação valoriza animais que reúnam qualidade genética, funcionalidade, potencial leiteiro e capacidade de adaptação, características essenciais para a formação e o aprimoramento de rebanhos de alto desempenho.",
+      gi_v3: "Acreditamos que o verdadeiro valor da genética está em sua capacidade de transformar potencial em resultados, contribuindo para uma pecuária mais produtiva, rentável e preparada para os desafios do futuro.",
+      gu_s: "Dupla aptidão, rusticidade e eficiência na produção de leite e carne",
+      gu_1: "Originária da Índia, onde é conhecida como Kankrej, a raça Guzerá chegou ao Brasil no século XIX e consolidou-se como uma das mais tradicionais e versáteis raças zebuínas. Reconhecida por seu porte imponente, resistência e extraordinária capacidade de adaptação, reúne uma característica estratégica para a pecuária moderna: a dupla aptidão para produção de leite e carne, aliando produtividade, rusticidade e eficiência econômica.",
+      gu_2: "Com reconhecida vocação produtiva, o Guzerá destaca-se pela produção leiteira, qualidade de carcaça, ganho de peso, fertilidade, longevidade e eficiência alimentar. Sua capacidade de aproveitar pastagens tropicais e suportar condições climáticas adversas permite desenvolver sistemas de produção competitivos, especialmente em regiões de altas temperaturas e disponibilidade variável de alimentos.",
+      gu_3: "As matrizes Guzerá apresentam atributos valorizados na pecuária de dupla aptidão, como habilidade materna, produção de leite, resistência ao calor e capacidade reprodutiva. Os machos destacam-se pelo desenvolvimento corporal, potencial de produção de carne e contribuição genética para cruzamentos. Essas características proporcionam maior versatilidade aos rebanhos, permitindo integrar a produção leiteira à produção de animais destinados ao mercado de carne.",
+      gu_4: "A origem asiática da raça, sua longa trajetória de seleção e sua utilização em cruzamentos na África reforçam sua relevância para regiões tropicais. Na África e na Ásia, onde a adaptação ao calor e a eficiência dos recursos alimentares são fundamentais, o Guzerá representa uma alternativa genética especialmente promissora para fortalecer a produção de leite e carne e contribuir para a segurança alimentar.",
+      gu_v1: "Com uma trajetória na pecuária que remonta a 1930, a MF do Brasil reconhece no Guzerá uma genética de grande valor estratégico, capaz de integrar duas atividades essenciais à segurança alimentar: a produção de leite e de carne.",
+      gu_v2: "Nossa atuação valoriza animais que reúnam qualidade genética, rusticidade, eficiência reprodutiva, potencial leiteiro e desempenho de corte, características fundamentais para o desenvolvimento de rebanhos produtivos e adaptados às diferentes realidades da pecuária tropical, com especial atenção às oportunidades de desenvolvimento agropecuário na África e na Ásia.",
+      gu_v3: "Acreditamos que a evolução genética, aliada à tradição e à seleção criteriosa, é fundamental para transformar potencial produtivo em resultados concretos. O Guzerá representa essa visão, oferecendo oportunidades para uma pecuária mais eficiente, rentável e sustentável, capaz de contribuir para o crescimento da produção e o fortalecimento da segurança alimentar em diferentes regiões do mundo.",
       h_mis: "Missões e <em>parcerias internacionais</em>",
       sub_mis: "Acordos, encontros institucionais e visitas técnicas que levam a genética e o conhecimento brasileiros a outros países.",
       mi1: "Genética zebuína brasileira para a África",
@@ -1012,6 +1135,33 @@ li.oculto{display:none !important}
       st3t: "Projets internationaux", st3: "Coopération, renforcement des capacités et développement agricole.",
       st4t: "Notre histoire", st4: "Tradition de la famille Franco depuis 1930.",
       st5t: "Éducation et formation professionnelle pour l'agrobusiness", st_atual: "En cours de mise à jour",
+      rz_k: "Races", rz_h: "Nos <em>races</em>", rz_mais: "Lire la suite", rz_menos: "Réduire", rz_visao: "La vision de MF do Brasil",
+      rz_lema: "MF do Brasil — depuis 1930, une tradition transmise de génération en génération. Une génétique qui construit l'avenir.",
+      ne_s: "Génétique, rusticité et efficacité dans l'élevage bovin à viande",
+      ne_1: "Originaire d'Inde et introduite au Brésil au XIXe siècle, la race Nelore a trouvé dans les conditions tropicales brésiliennes l'environnement idéal pour son développement. Au fil des générations, la sélection et l'amélioration génétique ont fait du Nelore l'un des principaux piliers de l'élevage bovin à viande du pays, reconnu pour sa rusticité, sa résistance et son extraordinaire capacité d'adaptation.",
+      ne_2: "Devenu la race phare de la production brésilienne de viande bovine, le Nelore se distingue par son efficacité alimentaire, sa fertilité, sa longévité, ses qualités maternelles et ses performances. Sa capacité à valoriser les pâturages tropicaux et à obtenir de bons résultats dans différents systèmes d'élevage en fait une référence pour la production de viande à grande échelle, compétitive et durable.",
+      ne_3: "Les animaux Nelore présentent des caractéristiques fonctionnelles particulièrement appréciées en élevage à viande, comme la tolérance à la chaleur, l'adaptation aux conditions tropicales, une bonne conformation musculaire, la facilité de vêlage et l'efficacité reproductive. Ces qualités contribuent à la productivité des troupeaux, à la maîtrise des coûts d'élevage et à la valorisation des animaux sur le marché.",
+      ne_4: "Les progrès continus de l'amélioration génétique ont permis des gains en précocité, en croissance pondérale, en qualité de carcasse et en efficacité productive, faisant du Nelore une génétique stratégique pour répondre aux exigences croissantes des marchés national et international de la viande bovine.",
+      ne_v1: "Forte d'une histoire dans l'élevage qui remonte à 1930, MF do Brasil voit dans le Nelore l'expression de l'excellence de la sélection génétique brésilienne et de sa capacité à produire des animaux adaptés, efficaces et compétitifs.",
+      ne_v2: "Notre action valorise les animaux qui réunissent qualité génétique, développement musculaire, fertilité, rusticité et potentiel productif, des caractéristiques essentielles pour constituer des troupeaux supérieurs et répondre aux différentes demandes de l'élevage à viande.",
+      ne_v3: "Nous croyons que l'alliance de la tradition, d'une sélection rigoureuse et du progrès génétique est la voie pour transformer le potentiel en résultats, au service d'un élevage plus rentable, durable et ouvert aux opportunités du marché mondial.",
+      gi_alt: "Vache Girolando noire au pâturage", gi_cred: "Photo : Association brésilienne des éleveurs de Girolando",
+      gi_s: "Génétique, productivité et efficacité dans l'élevage laitier",
+      gi_1: "Authentiquement brésilienne, la race Girolando est née dans les années 1940 du croisement entre les races Gir et Holstein, alliant la rusticité, la résistance et l'adaptation aux climats tropicaux du Gir au haut potentiel productif de la Holstein.",
+      gi_2: "Devenu l'un des grands piliers de l'élevage laitier brésilien, le Girolando se distingue par sa forte production laitière, sa fertilité, sa précocité, sa longévité et son efficacité reproductive. Sa polyvalence lui assure d'excellentes performances sous différents climats et systèmes de production, réunissant les qualités essentielles d'une filière laitière moderne, compétitive et durable.",
+      gi_3: "Les vaches Girolando présentent des atouts fonctionnels particulièrement appréciés en production laitière, comme une bonne conformation de la mamelle, des aplombs solides, une bonne thermorégulation et une efficacité alimentaire. Ces qualités contribuent à réduire les coûts de production, à allonger la carrière productive et à améliorer le revenu de l'éleveur.",
+      gi_4: "Les progrès continus de l'amélioration génétique permettent à la race d'obtenir des résultats toujours plus remarquables en productivité et en qualité, faisant du choix d'animaux génétiquement supérieurs un facteur décisif pour l'évolution des troupeaux.",
+      gi_v1: "Forte d'une histoire dans l'élevage qui remonte à 1930, MF do Brasil voit dans le Girolando une combinaison stratégique entre tradition, progrès génétique et efficacité productive.",
+      gi_v2: "Notre action valorise les animaux qui réunissent qualité génétique, fonctionnalité, potentiel laitier et capacité d'adaptation, des caractéristiques essentielles pour constituer et améliorer des troupeaux performants.",
+      gi_v3: "Nous croyons que la vraie valeur de la génétique réside dans sa capacité à transformer le potentiel en résultats, au service d'un élevage plus productif, rentable et prêt à relever les défis de l'avenir.",
+      gu_s: "Double aptitude, rusticité et efficacité dans la production de lait et de viande",
+      gu_1: "Originaire d'Inde, où elle est connue sous le nom de Kankrej, la race Guzerá est arrivée au Brésil au XIXe siècle et s'est imposée comme l'une des races zébu les plus traditionnelles et polyvalentes. Reconnue pour son gabarit imposant, sa résistance et son extraordinaire capacité d'adaptation, elle réunit un atout stratégique pour l'élevage moderne : la double aptitude lait et viande, alliant productivité, rusticité et efficacité économique.",
+      gu_2: "Dotée d'une vocation productive reconnue, la Guzerá se distingue par sa production laitière, la qualité de sa carcasse, son gain de poids, sa fertilité, sa longévité et son efficacité alimentaire. Sa capacité à valoriser les pâturages tropicaux et à supporter des conditions climatiques difficiles permet des systèmes de production compétitifs, notamment dans les régions chaudes où la disponibilité alimentaire est variable.",
+      gu_3: "Les vaches Guzerá présentent des qualités recherchées en élevage mixte, comme les aptitudes maternelles, la production laitière, la tolérance à la chaleur et la capacité de reproduction. Les mâles se distinguent par leur développement corporel, leur potentiel de production de viande et leur apport génétique en croisement. Ces caractéristiques donnent plus de polyvalence aux troupeaux et permettent d'associer production laitière et production d'animaux destinés au marché de la viande.",
+      gu_4: "L'origine asiatique de la race, sa longue histoire de sélection et son utilisation en croisement en Afrique renforcent son intérêt pour les régions tropicales. En Afrique et en Asie, où l'adaptation à la chaleur et l'efficacité des ressources alimentaires sont essentielles, la Guzerá constitue une option génétique particulièrement prometteuse pour renforcer la production de lait et de viande et contribuer à la sécurité alimentaire.",
+      gu_v1: "Forte d'une histoire dans l'élevage qui remonte à 1930, MF do Brasil voit dans la Guzerá une génétique de grande valeur stratégique, capable d'associer deux activités essentielles à la sécurité alimentaire : la production de lait et de viande.",
+      gu_v2: "Notre action valorise les animaux qui réunissent qualité génétique, rusticité, efficacité reproductive, potentiel laitier et performances bouchères, des caractéristiques essentielles pour développer des troupeaux productifs et adaptés aux différentes réalités de l'élevage tropical, avec une attention particulière aux opportunités de développement agricole en Afrique et en Asie.",
+      gu_v3: "Nous croyons que le progrès génétique, allié à la tradition et à une sélection rigoureuse, est essentiel pour transformer le potentiel productif en résultats concrets. La Guzerá incarne cette vision et ouvre la voie à un élevage plus efficace, rentable et durable, capable de contribuer à la croissance de la production et au renforcement de la sécurité alimentaire dans différentes régions du monde.",
       h_mis: "Missions et <em>partenariats internationaux</em>",
       sub_mis: "Accords, rencontres institutionnelles et visites techniques qui portent la génétique et le savoir-faire brésiliens dans d'autres pays.",
       mi1: "Génétique zébu brésilienne pour l'Afrique",
@@ -1161,6 +1311,33 @@ li.oculto{display:none !important}
       st3t: "International projects", st3: "Cooperation, capacity building and agricultural development.",
       st4t: "Our history", st4: "A Franco family tradition since 1930.",
       st5t: "Education and professional training for agribusiness", st_atual: "Coming soon",
+      rz_k: "Breeds", rz_h: "Our <em>breeds</em>", rz_mais: "Read more", rz_menos: "Show less", rz_visao: "MF do Brasil's view",
+      rz_lema: "MF do Brasil — since 1930, a tradition passed down through generations. Genetics that build the future.",
+      ne_s: "Genetics, hardiness and efficiency in beef cattle farming",
+      ne_1: "Originating in India and introduced to Brazil in the 19th century, the Nelore breed found in Brazil's tropical conditions the ideal environment for its development. Over generations, selection and genetic improvement have made Nelore one of the main foundations of the country's beef industry, recognized for its hardiness, resilience and extraordinary adaptability.",
+      ne_2: "Established as the leading breed in Brazilian beef production, Nelore stands out for feed efficiency, fertility, longevity, maternal ability and productive performance. Its capacity to make good use of tropical pastures and deliver good results in different production systems makes it a benchmark for large-scale beef production, with competitiveness and sustainability.",
+      ne_3: "Nelore cattle have functional traits especially valued in beef production, such as heat tolerance, adaptation to tropical conditions, good muscling, calving ease and reproductive efficiency. These qualities contribute to herd productivity, lower production costs and higher market value for the animals.",
+      ne_4: "Continuous genetic improvement has driven gains in early maturity, weight performance, carcass quality and productive efficiency, establishing Nelore as strategic genetics to meet the growing demands of domestic and international beef markets.",
+      ne_v1: "With a history in livestock dating back to 1930, MF do Brasil sees Nelore as an expression of the excellence of Brazilian genetic selection and its ability to produce adapted, efficient and competitive animals.",
+      ne_v2: "Our work values animals that combine genetic quality, muscle development, fertility, hardiness and productive potential — essential traits for building superior herds and meeting the different demands of beef cattle production.",
+      ne_v3: "We believe that combining tradition, careful selection and genetic progress is the way to turn potential into results, contributing to more profitable and sustainable livestock farming, connected to the opportunities of the global market.",
+      gi_alt: "Black Girolando cow on pasture", gi_cred: "Photo: Brazilian Girolando Breeders Association",
+      gi_s: "Genetics, productivity and efficiency in dairy farming",
+      gi_1: "Genuinely Brazilian, the Girolando breed emerged in the 1940s from crossing Gir and Holstein cattle, combining the hardiness, resilience and adaptability to tropical climates of the Gir with the high productive potential of the Holstein.",
+      gi_2: "Established as one of the great pillars of Brazilian dairy farming, Girolando stands out for high milk yield, fertility, early maturity, longevity and reproductive efficiency. Its versatility allows excellent performance in different climates and production systems, bringing together the key traits of modern, competitive and sustainable dairy farming.",
+      gi_3: "Girolando cows have functional traits especially valued in milk production, such as good udder conformation, sound feet and legs, thermoregulation capacity and feed efficiency. These qualities help reduce production costs, extend productive life and improve the farmer's economic return.",
+      gi_4: "Continuous genetic improvement has enabled the breed to achieve increasingly impressive results in productivity and quality, making the choice of genetically superior animals a decisive factor in herd development.",
+      gi_v1: "With a history in livestock dating back to 1930, MF do Brasil sees Girolando as a strategic combination of tradition, genetic progress and productive efficiency.",
+      gi_v2: "Our work values animals that combine genetic quality, functionality, dairy potential and adaptability — essential traits for building and improving high-performance herds.",
+      gi_v3: "We believe the true value of genetics lies in its ability to turn potential into results, contributing to more productive and profitable livestock farming, ready for the challenges of the future.",
+      gu_s: "Dual purpose, hardiness and efficiency in milk and beef production",
+      gu_1: "Originating in India, where it is known as Kankrej, the Guzerá breed arrived in Brazil in the 19th century and became one of the most traditional and versatile zebu breeds. Recognized for its imposing size, resilience and extraordinary adaptability, it offers a strategic trait for modern livestock farming: dual purpose for milk and beef, combining productivity, hardiness and economic efficiency.",
+      gu_2: "With a recognized productive vocation, Guzerá stands out for milk production, carcass quality, weight gain, fertility, longevity and feed efficiency. Its ability to make use of tropical pastures and withstand adverse climatic conditions allows competitive production systems, especially in regions with high temperatures and variable feed availability.",
+      gu_3: "Guzerá cows have traits valued in dual-purpose farming, such as maternal ability, milk production, heat tolerance and reproductive capacity. The bulls stand out for body development, beef production potential and genetic contribution to crossbreeding. These traits give herds greater versatility, making it possible to combine milk production with the production of animals for the beef market.",
+      gu_4: "The breed's Asian origin, its long history of selection and its use in crossbreeding in Africa reinforce its relevance for tropical regions. In Africa and Asia, where heat adaptation and efficient use of feed resources are essential, Guzerá is an especially promising genetic option to strengthen milk and beef production and contribute to food security.",
+      gu_v1: "With a history in livestock dating back to 1930, MF do Brasil sees Guzerá as genetics of great strategic value, able to bring together two activities essential to food security: milk and beef production.",
+      gu_v2: "Our work values animals that combine genetic quality, hardiness, reproductive efficiency, dairy potential and beef performance — essential traits for developing productive herds adapted to the different realities of tropical livestock farming, with special attention to agricultural development opportunities in Africa and Asia.",
+      gu_v3: "We believe that genetic progress, together with tradition and careful selection, is key to turning productive potential into concrete results. Guzerá represents this vision, offering opportunities for more efficient, profitable and sustainable livestock farming, able to contribute to production growth and stronger food security in different regions of the world.",
       h_mis: "Missions and <em>international partnerships</em>",
       sub_mis: "Agreements, institutional meetings and technical visits that take Brazilian genetics and know-how to other countries.",
       mi1: "Brazilian Zebu genetics for Africa",
