@@ -25,3 +25,7 @@ video/            vídeos do site
 ## Como rodar
 
 Basta abrir o `index.html` no navegador ou servir a pasta com qualquer servidor estático. A publicação é feita enviando os arquivos para o `public_html` da hospedagem.
+
+## Manutenção
+
+Como configurar outro computador, editar os textos nos 3 idiomas, publicar e o que está pendente: veja **[MANUTENCAO.md](MANUTENCAO.md)**.
